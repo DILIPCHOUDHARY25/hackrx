@@ -1,7 +1,0 @@
-flask
-requests
-python-dotenv
-PyMuPDF
-sentence-transformers
-faiss-cpu
-huggingface-hub
