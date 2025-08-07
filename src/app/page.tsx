@@ -43,7 +43,7 @@
 //     const questionArray = questions.split('\n').filter(q => q.trim() !== '');
 
 //     try {
-//       const response = await fetch('/api/hackerx/run', {
+//       const response = await fetch('/api/v1/hackrx/run', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
