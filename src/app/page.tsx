@@ -48,7 +48,7 @@
 //         headers: {
 //           'Content-Type': 'application/json',
 //           // The auth token would be passed here if required by the API
-//           'Authorization': 'Bearer 6b4457cc45bb8b797a89d7e440c29c41f7a71a3069f1cccc2b614d2946073afb',
+//           'Authorization': 'Bearer edb92f40e0a8cae8e290d2313f7e52c40d82f79f8539d28a8ac5150a219eb2d0 ',
 //         },
 //         body: JSON.stringify({
 //           documents: documentUrl,
@@ -343,12 +343,12 @@ Are the medical expenses for an organ donor covered under this policy?`);
     const questionArray = questions.split('\n').filter(q => q.trim() !== '');
 
     try {
-      const response = await fetch('/api/hackrx/run', {  // Updated endpoint
+      const response = await fetch('/api/v1/hackrx/run', {  // Updated endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
-          'Authorization': 'Bearer 6b4457cc45bb8b797a89d7e440c29c41f7a71a3069f1cccc2b614d2946073afb',
+          'Authorization': 'Bearer edb92f40e0a8cae8e290d2313f7e52c40d82f79f8539d28a8ac5150a219eb2d0',
         },
         body: JSON.stringify({
           documents: documentUrl,
